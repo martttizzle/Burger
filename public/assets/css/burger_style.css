@@ -1,0 +1,35 @@
+body {
+    background-color:  rgba(88, 244, 49, 0.9);
+    width: 80%;
+    margin: auto;
+}
+
+.burgerpng {
+    max-width: 550px;
+    max-height: 150px;
+    align-self: center;
+    display: block;
+   ;
+}
+
+.title {
+    color: rgba(88, 244, 49, 0.9);
+    align-self: center;
+    text-align: center;
+}
+
+#submit {
+    color: rgba(88, 244, 49, 0.9);
+}
+
+.itemwrap{
+    background-color: rgba(88, 244, 49, 0.9)t;
+}
+
+.endwrap {
+    background-color: rgba(88, 244, 49, 0.9);
+}
+
+.remove {
+    position: absolute;
+    cursor: pointer}
