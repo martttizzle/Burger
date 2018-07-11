@@ -2,11 +2,11 @@
 var mysql = require("mysql");
 
 var connection = mysql.createConnection({
-  host: "localhost",
+  host: "localhost" || "us-cdbr-iron-east-04.cleardb.net",
   port: 3306,
-  user: "root",
-  password: "Martel83",
-  database: "burgerss_db"
+  user: "root" || "b350f1ad0a79f6",
+  password: "Martel83" || "05eb9721",
+  database: "burgerss_db" || "heroku_901a690d2f04ae0"
 });
 
 // Make connection.
@@ -20,3 +20,4 @@ connection.connect(function(err) {
 
 // Export connection for our ORM to use.
 module.exports = connection;
+//CLEARDB_DATABASE_URL: mysql://b350f1ad0a79f6:05eb9721@us-cdbr-iron-east-04.cleardb.net/heroku_901a690d2f04ae0?reconnect=true
