@@ -2,11 +2,13 @@
 var mysql = require("mysql");
 
 var connection = mysql.createConnection({
-  host: "localhost" || "us-cdbr-iron-east-04.cleardb.net",
-  //port: 3306,
-  user: "root" || "b350f1ad0a79f6",
-  password: "Martel83" || "05eb9721",
-  database: "burgerss_db" || "heroku_901a690d2f04ae0"
+  process.env.CLEARDB_DATABASE_URL
+
+  // host: "localhost" || "us-cdbr-iron-east-04.cleardb.net",
+  // //port: 3306,
+  // user: "root" || "b350f1ad0a79f6",
+  // password: "Martel83" || "05eb9721",
+  // database: "burgerss_db" || "heroku_901a690d2f04ae0"
 });
 
 // Make connection.
